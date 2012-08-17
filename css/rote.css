@@ -1,0 +1,343 @@
+/* https://github.com/nicinabox/superslides --------------------- */
+#slides {
+  overflow: hidden;
+  width: 100%;
+  height: 100%; 
+}
+#slides .slides-container {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	position: relative; 
+}
+#slides .slides-container li {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	background: none; 
+}
+#slides .slides-container li.current {
+	display: block;
+	z-index: 1; 
+}
+#slides .slides-container li img {
+	-webkit-backface-visibility: hidden;
+	-ms-interpolation-mode: bicubic;
+	max-width: none;
+	min-width: 100%;
+	min-height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0; 
+}
+
+/* main */
+#slides .slides-container li .container {
+  width: 55%;
+	xmin-width: 902px;
+  min-height: 300px;
+  margin: 0px auto;
+  position: relative;
+  top: 420px;
+  padding: 0px;
+  background: transparent;
+}
+
+
+/* modifications for listen */
+.slides-navigation {
+  margin: 0 auto;
+  position: relative;
+  z-index: 99999999;
+}
+.slides-navigation a {
+  position: fixed;
+  bottom: 40px;
+  display: block;
+  width: 10%;
+	height: 100%;
+	padding: 0px;
+	background: none;
+}
+.slides-navigation a.prev {
+  left: 0px;
+}
+.slides-navigation a.next {
+  right: 0px;
+}
+.slides-navigation a.prev:hover, .slides-navigation a.prev:hover {
+	xbackground-color: #fff;
+	xopacity:0.4;
+	xfilter:alpha(opacity=40);
+}
+
+
+
+/* navigation ---------------------------------------------------- */
+#nav {
+	text-align: center;
+  width: 100%;
+  height: auto;
+  margin: 0px auto;
+	background-color: transparent;
+	z-index: 9999999;
+	position: fixed;
+	top: 250px;
+	left: 0px;
+}
+#nav h1 {
+  height: 90px;
+}
+
+/* logo ---------------------------------------------------- */
+#logo {
+	position: fixed;
+  height: auto;
+  margin: 0px auto;
+	background-color: transparent;
+	z-index: 9999999;
+  width: 100%;
+	left: 0px;
+	top: 50px;
+}
+
+/* video player */
+.videoplayer {
+	font-size: 60px;
+}
+
+/* raindrop grid ---------------------------------------------------- */
+#tweet {
+  word-wrap: break-word;  
+	text-align: center;
+	overflow-y: hidden;
+	xbackground-color: #000;
+	z-index: 9999999;
+	width: 100%;
+	min-height: 180px;
+}	
+#listener {
+	position: fixed;
+	top: -30000px;
+	left: -30000px;
+	xdisplay: none;
+}
+.cell {
+	float: left;
+}
+
+
+
+
+/* footer tweet ---------------------------------------------------- */
+#footerTweet {
+	position: fixed;
+	bottom: 30px;
+	left: 0px;
+	width: 100%;
+	height: 48px;
+	min-width: 900px;
+	z-index: 9999999;
+}
+#tweetAuthor {
+	width: 25%;
+	height: 48px;
+	float: left;
+}
+#tweetAuthor div {
+  position: absolute;
+  bottom: 0px;
+  left: 30px;
+}
+#tweetText {
+	width: 50%;
+	height: 48px;
+	float: left;
+	text-align: center;
+}
+#tweetText div {
+  position: absolute;
+  bottom: 0px;
+  left: 25%;
+  width: 50%;
+}
+#tweetTime {
+	width: 25%;
+	height: 48px;
+	float: left;
+	text-align: right;
+}
+#tweetTime div {
+  position: absolute;
+  bottom: 0px;
+  right: 30px;
+}
+
+
+
+/* columns ---------------------------------------------------- */
+.text {
+	margin: 0px auto;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+.textColumn {
+	width: auto;
+	float: left;
+	text-align: center;
+	width: 33.3%;
+	min-width: 192px;
+}
+.width25 {
+	text-align: left;
+	width: 23.5%;
+	margin-right: 16px;
+	margin-bottom: 32px;
+	min-width: 192px;
+	max-width: 288px;
+}
+.width25:last-child {
+	margin-right: 0px;
+}
+.width100 {
+	mxin-width: 860px;
+}
+.width192 {
+	width: 192px;
+}
+
+
+.textAbout {
+	width: 50%;
+	min-width: 220px;
+}
+
+/* credits area */
+.credits {
+	position:fixed; bottom: 30px; left: 0px; height: auto; width: 100%; text-align: center
+}
+.credits div {
+	margin: 0px auto; width: 50%; min-width: 320px
+}
+.credits div p:last-child { margin-bottom: 0px} .credits div h2 {margin-bottom: 16px}
+
+
+/* typography ----------------------------------------------------- */
+body, h1, h2, h3, h4, p {
+  font: normal 14px 'Akzidenz-GroteskProRegularRg', Helvetica, arial, serif;
+  line-height: 16px;
+  text-transform: none; 
+}
+h1 {
+  font-family: 'Akzidenz-GroteskProBoldRg', Helvetica, arial, serif;
+  font-size: 28px;
+  line-height: 30px;
+}
+h1, h2, h3, h4 {
+  margin: 0px;
+  padding: 0px;
+}
+a, a:active, a:focus, a:link, a:visited { 
+	font-weight: normal;
+}
+a:hover { 
+	font-weight: normal;
+}
+#tweet, #listener {
+  font: normal 50px 'Akzidenz-GroteskProRegularRg', Helvetica, arial, serif;
+  line-height: 60px;
+}
+a.selected {
+  font-family: 'Akzidenz-GroteskProBoldRg', Helvetica, arial, serif;
+}
+.text h2 {
+  font-family: 'Akzidenz-GroteskProBoldRg', Helvetica, arial, serif;
+	margin-bottom: 16px;
+}
+em {
+  font-style: italic;
+}
+p {
+	margin-bottom: 16px;
+}
+pre {
+	text-align: center;
+	margin: 0px;
+
+	padding: 0px;
+  width: 100%;
+}
+
+/* colors --------------------------------------------------------- */
+body { 
+  background-color: #000; 
+  color: #fff; 
+}
+a, a:active, a:focus, a:link, a:visited { 
+  color: inherit; 
+}
+#nav a:hover { 
+  xcolor: #000; 
+  font-family: 'ReaderBold', Helvetica, arial, serif;
+}
+#main {
+  color: #fff;
+}
+.img {
+	background-color:rgb(73,66,61);
+}
+a.selected {
+	xcolor: #000;
+	xfont-weight: bold;
+	cursor: default;
+}
+
+/* images */
+.darker {
+	opacity:0.8;
+	filter:alpha(opacity=80); /* For IE8 and earlier */
+}
+
+
+/* behaviors ------------------------------------------------------ */
+a, a:active, a:focus, a:link, a:visited { 
+  text-decoration: none; 
+}
+a:hover { 
+  text-decoration: none; 
+}
+
+
+/* media queries -------------------------------------------------- */
+@media only screen and (min-width: 480px) {
+  /* Style adjustments for viewports 480px and over go here */
+}
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for viewports 768px and over go here */
+}
+@media only screen and (min-height: 760px) {
+
+}
+
+
+@media only screen and (max-width: 900px) {
+	#footerTweet {
+		display: none;
+	}
+}
+@media only screen and (max-height: 600px) {
+	#footerTweet {
+		display: none;
+	}
+}
+
+
+
+
+
+@media only screen and (max-height: 860px) {
+	.credits {
+		display: none;
+	}
+}
