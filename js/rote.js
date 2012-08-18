@@ -123,7 +123,6 @@ $(document).ready(function() {
       $('#navId03').addClass('selected');
     }
   });
-/*
   $("#navId04").click(function() { 
     if ($(this).hasClass('selected')) {
       return false; 
@@ -133,7 +132,16 @@ $(document).ready(function() {
       $('#navId04').addClass('selected');
     }
   });
-*/
+  $("#navId05").click(function() { 
+    if ($(this).hasClass('selected')) {
+      return false; 
+    } else {
+      $('#slides').superslides('animate', 5); 
+      $('#nav a').removeClass('selected');
+      $('#navId05').addClass('selected');
+    }
+  });
+
   // hyphenate body text
   Hyphenator.config({
     classname : 'hyphenate',
